@@ -6,10 +6,10 @@ from flask import (Flask, redirect, render_template, request,
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-   print('Request for index page received')
-   return render_template('index.html')
+# @app.route('/')
+# def index():
+#    print('Request for index page received')
+#    return render_template('index.html')
 
 # @app.route('/favicon.ico')
 # def favicon():

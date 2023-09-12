@@ -22,7 +22,16 @@ def retoolDisplay():
 
 @app.route('/helloworld')
 def helloWorld():
-    return "Hello, World!"
+   print("Hello, World!")
+   return render_template('hello.html')
+
+@app.route('/',methods = ['GET','POST'])
+def send():
+   if request.method == 'POST':
+      formText = request.form['someText']
+      return render_template('hello.html',someText=formText)
+   return render_template('index.html')
+
 
 if __name__ == '__main__':
    app.run()

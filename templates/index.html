@@ -1,22 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
     <title>OAS - Calcs</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"
+    />
+    <link
+        rel="shortcut icon"
+        href="{{ url_for('static', filename='favicon.ico') }}"
+    />
 </head>
 <html>
-   <body>
-     <main>
-        <div class="px-4 py-3 my-2 text-center">
-            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/Omega-iconbadge_500px-500x500.png') }}" alt="Omega Logo" width="192" height="192"/>
-            <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
-            <h1 class="display-6 fw-bold text-primary">Omega Calculations Team Processing System</h1>            
-          </div>
-        
+    <body>
+        <main>
+            <div class="px-4 py-3 my-2 text-center">
+                <img
+                    class="d-block mx-auto mb-4"
+                    src="{{ url_for('static', filename='images/Omega-iconbadge_500px-500x500.png') }}"
+                    alt="Omega Logo"
+                    width="192"
+                    height="192"
+                />
+                <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+                <h1 class="display-6 fw-bold text-primary">
+                    Omega Calculations Team Processing System
+                </h1>
+            </div>
 
-         <!-- START COGNITO FORM -->
-         <script src="https://www.cognitoforms.com/f/seamless.js" data-key="vH0_IEYQlk6TURFHw9u-WQ" data-form="1"></script>
-         <!-- END COGNITO FORM -->
-     </main>      
-   </body>
+            <!-- START FORM -->
+            <form method="POST" action="/">
+                <div class="form-group">
+                    <input type="text" name="someText" />
+                </div>
+                <input class="btn btn-primary" type="submit" value="submit" />
+            </form>
+
+            <!-- END FORM -->
+        </main>
+    </body>
 </html>

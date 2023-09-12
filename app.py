@@ -22,7 +22,7 @@ def retoolDisplay():
 
 @app.route('/helloworld')
 def helloWorld():
-   print("Hello, World!")
+   print("Hello, Appsmith!")
    return render_template('hello.html')
 
 @app.route('/',methods = ['GET','POST'])

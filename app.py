@@ -6,29 +6,25 @@ from flask import (Flask, redirect, render_template, request,
 app = Flask(__name__)
 
 
-# @app.route('/')
-# def index():
-#    print('Request for index page received')
-#    return render_template('index.html')
+@app.route('/')
+def index():
+   print('Request for index page received')
+   return render_template('index.html')
 
-# @app.route('/favicon.ico')
-# def favicon():
-#     return send_from_directory(os.path.join(app.root_path, 'static'),
-#                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
-
-@app.route('/retool-app')
-def retoolDisplay():
-   return render_template('retool-app.html')
+# @app.route('/retool-app')
+# def retoolDisplay():
+#    return render_template('retool-app.html')
 
 @app.route('/helloworld')
 def helloWorld():
-   print("Hello, Appsmith!")
+   print("Hello page rendered!")
    return render_template('hello.html')
 
 @app.route('/',methods = ['GET','POST'])
 def send():
    if request.method == 'POST':
       formText = request.form['someText']
+      print("POST method called on submit!")
       return render_template('hello.html',someText=formText)
    return render_template('index.html')
 

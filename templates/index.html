@@ -21,7 +21,6 @@
                     width="192"
                     height="192"
                 />
-                <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
                 <h1 class="display-6 fw-bold text-primary">
                     Omega Calculations Team Processing System
                 </h1>
@@ -35,38 +34,415 @@
                 <input class="btn btn-primary" type="submit" value="submit" />
             </form> -->
 
+            <!-- NEW BOOTSTRAP FORM -->
+            <form method="POST" action="/" class="form-horizontal">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Enter Information:</legend>
 
-            <form method="POST" action="/">
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Example select</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect2">Example multiple select</label>
-                  <select multiple class="form-control" id="exampleFormControlSelect2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Example textarea</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <input class="btn btn-primary" type="submit" value="submit" />
-              </form>
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="ein"
+                            >Company EIN</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="ein"
+                                name="ein"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter EIN</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="case_number"
+                            >Case Number</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="case_number"
+                                name="case_number"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter Case Number</span>
+                        </div>
+                    </div>
+
+                    <legend>2019 Year</legend>
+
+                    <!-- 2019 Q1 Gross Receipts Entry-->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2019_q1_gross_receipts_entry"
+                            >2019 Q1 Gross Receipts Entry</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="2019_q1_gross_receipts_entry"
+                                name="2019_q1_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2019 Q2 Gross Receipts Entry -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2019_q2_gross_receipts_entry"
+                            >2019 Q2 Gross Receipts Entry</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="2019_q2_gross_receipts_entry"
+                                name="2019_q2_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2019 Q3 Gross Receipts Entry -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2019_q3_gross_receipts_entry"
+                            >2019 Q3 Gross Receipts Entry
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="2019_q3_gross_receipts_entry"
+                                name="2019_q3_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2019 Q4 Gross Receipts Entry  -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2019_q4_gross_receipts_entry"
+                            >2019 Q4 Gross Receipts Entry
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="2019_q4_gross_receipts_entry"
+                                name="2019_q4_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <legend>2020 Year</legend>
+
+                    <!-- 2020 Q1 Gross Receipts Entry -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2020_q1_gross_receipts_entry"
+                            >2020 Q1 Gross Receipts Entry
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="2020_q1_gross_receipts_entry"
+                                name="2020_q1_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2020 Q2 Gross Receipts Entry  -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2020_q2_gross_receipts_entry"
+                            >2020 Q2 Gross Receipts Entry
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="2020_q2_gross_receipts_entry"
+                                name="2020_q2_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2020 Q3 Gross Receipts Entry -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2020_q3_gross_receipts_entry"
+                            >2020 Q3 Gross Receipts Entry
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="2020_q3_gross_receipts_entry"
+                                name="2020_q3_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2020 Q4 Gross Receipts Entry  -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2020_q4_gross_receipts_entry"
+                            >2020 Q4 Gross Receipts Entry
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="2020_q4_gross_receipts_entry"
+                                name="2020_q4_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <legend>2021 Year</legend>
+
+                    <!-- 2021 Q1 Gross Receipts Entry-->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2021_q1_gross_receipts_entry"
+                            >2021 Q1 Gross Receipts Entry</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="2021_q1_gross_receipts_entry"
+                                name="2021_q1_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2021 Q2 Gross Receipts Entry -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2021_q2_gross_receipts_entry"
+                            >2021 Q2 Gross Receipts Entry</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="2021_q2_gross_receipts_entry"
+                                name="2021_q2_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2021 Q3 Gross Receipts Entry-->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2021_q3_gross_receipts_entry"
+                            >2021 Q3 Gross Receipts Entry</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="2021_q3_gross_receipts_entry"
+                                name="2021_q3_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- 2021 Q4 Gross Receipts Entry -->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="2021_q4_gross_receipts_entry"
+                            >2021 Q4 Gross Receipts Entry</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="2021_q4_gross_receipts_entry"
+                                name="2021_q4_gross_receipts_entry"
+                                type="text"
+                                placeholder="$"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter dollar figure</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="start_date"
+                            >Start Date</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="start_date"
+                                name="start_date"
+                                type="text"
+                                placeholder="01-01-2000"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter date</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="majority_owners_name"
+                            >Majority Owner’s Name
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="majority_owners_name"
+                                name="majority_owners_name"
+                                type="text"
+                                placeholder="Jane Doe"
+                                class="form-control input-md"
+                                required=""
+                            />
+                            <span class="help-block">Enter name</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label
+                            class="col-md-4 control-label"
+                            for="relatives_of_majority_owners"
+                            >Relatives of Majority Owner’s
+                        </label>
+                        <div class="col-md-4">
+                            <input
+                                id="relatives_of_majority_owners"
+                                name="relatives_of_majority_owners"
+                                type="text"
+                                placeholder="John Doe, Cindy Doe, Amy Doe"
+                                class="form-control input-md"
+                            />
+                            <span class="help-block"
+                                >Enter comma separated names</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- File Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="filebutton"
+                            >File Button</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="filebutton"
+                                name="filebutton"
+                                class="input-file"
+                                type="file"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- File Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="filebutton"
+                            >File Button</label
+                        >
+                        <div class="col-md-4">
+                            <input
+                                id="filebutton"
+                                name="filebutton"
+                                class="input-file"
+                                type="file"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="saveButton"
+                            >Next Step</label
+                        >
+                        <div class="col-md-8">
+                            <button
+                                id="saveButton"
+                                name="saveButton"
+                                class="btn btn-success"
+                            >
+                                Save &amp; Continue
+                            </button>
+                            <button
+                                id="backButton"
+                                name="backButton"
+                                class="btn btn-info"
+                            >
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                    <!-- SUBMIT BUTTON -->
+                    <input
+                        class="btn btn-primary"
+                        type="submit"
+                        value="Submit"
+                    />
+                </fieldset>
+            </form>
 
             <!-- END FORM -->
         </main>

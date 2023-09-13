@@ -1,7 +1,9 @@
 import os
-
 from flask import (Flask, redirect, render_template, request,
                    send_from_directory, url_for)
+
+# IMPORT HELPER FUNCTIONS HERE
+from calculations import outputJson
 
 app = Flask(__name__)
 
@@ -17,15 +19,17 @@ def index():
 
 @app.route('/helloworld')
 def helloWorld():
-   print("Hello page rendered!")
+   print('app.route for Hello page triggered!')
    return render_template('hello.html')
 
 @app.route('/',methods = ['GET','POST'])
 def send():
    if request.method == 'POST':
-      formText = request.form['someText']
-      print("POST method called on submit!")
-      return render_template('hello.html',someText=formText)
+      formContent = request.form
+      ein = request.form['ein']
+      print('app.route POST triggered on submit!')
+      outputJson(formContent)
+      return render_template('hello.html',someText=ein)
    return render_template('index.html')
 
 

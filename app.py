@@ -13,9 +13,9 @@ def index():
    print('Request for index page received')
    return render_template('index.html')
 
-# @app.route('/retool-app')
-# def retoolDisplay():
-#    return render_template('retool-app.html')
+@app.route('/lowcode')
+def retoolDisplay():
+   return render_template('lowcode.html')
 
 @app.route('/helloworld')
 def helloWorld():

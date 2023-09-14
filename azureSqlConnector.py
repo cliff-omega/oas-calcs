@@ -2,10 +2,10 @@ import os
 import urllib.parse 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import select
+from sqlalchemy import (select, create_engine)
 
 # # CREATE DATABASE CONNECTION URI  
-# connectionUri = urllib.parse.quote_plus("Driver={ODBC Driver 18 for SQL Server};Server=tcp:sql-oas.database.windows.net,1433;Database=Teamwork;Uid=oasacctadmin;Pwd=VQAhZMbQKWYjS4M;Encrypt=yes;TrustServerCertificate=no;")
+# connectionUri = urllib.parse.quote_plus("Driver={ODBC Driver 18 for SQL Server};Server=tcp:sql-oas.database.windows.net,1433;")
 
 
 # # INITIALIZE FLASK APP AND CONFIGURE CONNECTION TO SQL SERVER
@@ -20,7 +20,12 @@ from sqlalchemy import select
 # session = Session(engine)
 # selectQuery = select(dbo.Comments).limit(5).all()
 
+
+# engine = create_engine("sqlite+pysqlite:///:memory:", echo=True)
+
+
 def connectAndWriteToAzureSql(contentsToWrite):
     print('connectAndWriteToAzureSql function was passed the following parameters:')
     print(contentsToWrite)
     return
+

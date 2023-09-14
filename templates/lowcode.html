@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>OAS - Calcs</title>
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"
+    />
+    <link
+        rel="shortcut icon"
+        href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+</head>
+<html>
+    <body>
+        <main>
+            <div class="px-4 py-3 my-2 text-center">
+                <img
+                    class="d-block mx-auto mb-4"
+                    src="{{ url_for('static', filename='images/Omega-iconbadge_500px-500x500.png') }}"
+                    alt="Omega Logo"
+                    width="192"
+                    height="192"
+                />
+                <h1 class="display-6 fw-bold">
+                    Calcs App - Low Code Version
+                </h1>
+
+                <!-- LOW CODE EMBED -->
+                <iframe id="lowcode-iframe" style="height:2000px;width:500px"
+                    src="https://app.appsmith.com/app/my-first-application/page1-64fa374274ad6b3bf4b6b0c0?embed=true" 
+                >
+                </iframe>
+
+                <a
+                    href="{{ url_for('index') }}"
+                    class="btn btn-primary btn-lg px-4 gap-3"
+                    >Back to Bootstrap Version</a
+                >
+            </div>
+        </main>
+
+        <script>
+          // Selecting the iframe element
+          let iframe = document.getElementById("lowcode-iframe");
+          
+          // Adjusting the iframe height onload event
+          iframe.onload = function(){
+              iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+          }
+          </script>
+    </body>
+</html>

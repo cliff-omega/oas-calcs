@@ -7,6 +7,7 @@ from calculations import outputJson
 
 app = Flask(__name__)
 
+port = 1337
 
 @app.route('/')
 def index():
@@ -34,4 +35,4 @@ def send():
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(port=1337)
